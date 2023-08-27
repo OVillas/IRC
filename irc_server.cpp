@@ -1,3 +1,5 @@
+/** Código em desenvolvimento, será o servidor, que trará a conexão entre os clientes e terá o log de cada dado transmitido. **/
+
 #include <iostream>
 #include <sys/socket.h>
 #include <arpa/inet.h>
