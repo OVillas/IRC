@@ -1,4 +1,4 @@
-/** CÛdigo em desenvolvimento, ser· o servidor, que trar· a conex„o entre os clientes e ter· o log de cada dado transmitido. **/
+/** C√≥digo em desenvolvimento, ser√° o servidor, que trar√° a conex√£o entre os clientes e ter√° o log de cada dado transmitido. **/
 
 #include <iostream>
 #include <sys/socket.h>

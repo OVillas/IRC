@@ -11,32 +11,61 @@ using namespace std;
 
 int clientSocket;
 
-Client::Client(string name, string password) : name(name), password(password) {}
+Client::Client(string IP, string name, string nick, string password) : 
+    IP(IP), name(name), nick(nick), password(password) {}
 
-void Client::setName(string name) {
-    if (!name.empty()) {
-        this->name = name;
-    }
+
+
+void Client::setIP(string IP)
+{
+    this->IP = IP;
 }
 
-string Client::getName() {
-    return this->name;
+string Client::getIP()
+{
+    return IP;
 }
 
-void Client::setPassword(string password) {
-    if (!password.empty()) {
-        this->password = password;
-    }
+void Client::setName(string name)
+{
+    this->name = name;
 }
 
-string Client::getPassword() {
-    return this->password;
+string Client::getName()
+{
+    return name;
 }
 
-void Client::receiverMessages() {
+void Client::setNick(string nick)
+{
+    this->nick = nick;
+}
+
+string Client::getNick()
+{
+    return nick;
+}
+
+void Client::setPassword(string password)
+{
+    this->password = password;
+}
+
+string Client::getPassword()
+{
+    return password;
+}
+
+/* void Client::receiverMessages() {
     char buffer[4096];
     while (true) {
-        
+        int bytesRead = recv(clientSocket, buffer, sizeof(buffer) - 1, 0);
     }
-}
+} */
 
+int main(int argc, char **argv) {
+    Client c1("192.168.0.1", "Carlos Lemos", "moles", "flamengo1981");
+    cout << "IP do cliente " << c1.getName() << "=> "<< c1.getIP() << "\n";
+
+    return 0;
+}
