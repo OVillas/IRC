@@ -2,6 +2,7 @@
 #define ADM_H
 #include "irc_client.h"
 
+using namespace std;
 class Administrator : public Client  {
 private:
     int admLevel;
