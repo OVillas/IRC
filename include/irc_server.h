@@ -1,11 +1,6 @@
 #include <iostream>
 #include <vector>
-#include "include/user.h"
+#include "include/irc_client.h"
 
 using namespace std;
 
-struct Chanel {
-    string name;
-    vector<User> users;
-    vector<User> banUsers; 
-};
