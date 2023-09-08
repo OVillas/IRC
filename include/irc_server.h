@@ -4,6 +4,7 @@
 #include <string>
 #include <vector>
 #include "include/irc_client.h"
+#include "include/irc_adm.h"
 
 using namespace std;
 

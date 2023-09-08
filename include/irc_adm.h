@@ -1,7 +1,7 @@
 #ifndef ADM_H
 #define ADM_H
 #include "irc_client.h"
-
+#include <iostream>
 using namespace std;
 class Administrator : public Client  {
 private:
