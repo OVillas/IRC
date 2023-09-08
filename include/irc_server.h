@@ -4,7 +4,7 @@
 #include <string>
 #include <vector>
 #include "include/irc_client.h"
-#include "include/irc_adm.h"
+#include "include/irc_admin.h"
 
 using namespace std;
 
